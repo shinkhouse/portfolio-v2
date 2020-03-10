@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Samuel Hinkhouse</title>
+  <link rel="icon" href="img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,500' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-latest.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/menubutton.js"></script>
+  <!-- <script src="js/slideshow.js"></script> -->
+  <script src="js/flowtype.js"></script>
+</head>
+
+<body>
+	<div class="logo">
+		<a href="index.html"><img id="logo" src="img/trans.png"></div></a>
+	</div>
+	<div class="navlinks">
+		<nav><ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about.html">ABOUT ME</a></li>
+			<li><a href="experience.html">EXPERIENCE</a></li>
+			<li id="active"><a href="projects.html">PROJECTS</a></li>
+		</ul></nav>
+	</div>
+	<div class="dropdown">
+	<img onclick="myFunction()" id="menuBtn" src="img/menuBtn2.png" class="dropbtn"/>
+		<div id="myDropdown" class="dropdown-content">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about.html">ABOUT ME</a></li>
+			<li><a href="experience.html">EXPERIENCE</a></li>
+			<li id="active"><a href="projects.html">PROJECTS</a></li>
+  		</div>
+	</div>
+	<div class="navbar"></div>
+	<div class="content">
+		<div class="post">
+			<h2>Projects</h2>
+			<p>
+			This page will be populated with projects I have worked on at school or projects I have worked on for fun over time. 
+			</p>
+
+			<h3><a href="https://www.behance.net/shinkhouse">Behance</a></h3>
+			<p>
+				Behance is a place for artists to post projects they have worked on. You will find many of my designs I have done over time on Behance.
+			</p>
+			<h3><a href="https://github.com/shinkhouse">Github</a></h3>
+			<p>
+				Github is a place for programmers to post the code of programs they have written to show off their work. I have posted a few projects on here and will continue to post capstone projects on here.
+			</p>
+			<h3><a href="projects/madlibgame/madlibgame.html">Mad Lib Game</a></h3>
+			<p>
+				After following some tutorials on basic JavaScript, I decided to take a swing on making a basic Mad Jibs game. It uses HTML, CSS, and JavaScript to allow the user to insert words into an array and prints out their "story" when they have filled in all of the spaces.
+			</p>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		$('.content').flowtype();
+	</script>
+</body>
+</html>

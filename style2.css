@@ -1,0 +1,354 @@
+/*
+	Name: Samuel Hinkhouse
+	Date: 5/16/2016
+	Description: This is the CSS for my website
+*/
+body {
+	background-color: #1a1a1a;
+	background-image: url("img/Background.jpg");
+    background-repeat: repeat;
+    margin: 0;
+	padding: 0;
+	font-family: 'Roboto','Montserrat', 'Trebuchet MS',Helvetica, Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #0A96F1;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+#menuBtn {
+		display: none;
+	}
+.dropdown {
+	display: none;
+}
+.logo {
+	position: fixed;
+	z-index: 2;
+	top: 10px;
+
+}
+
+.logo img {
+	width: 120px;
+	height: 28px;
+}
+
+/*  Navbar CSS  */
+.navbar {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 50px;
+	background-color: #404040; /*Grey Colored Bar*/
+	/*background-color: #2c6dff; Blue Colored Bar*/
+	color: white;
+	left: 0;
+	top: 0;
+}
+
+
+.navlinks {
+	position: absolute;
+	z-index: 99;
+	float: right;
+	text-align: right;
+	right: 400px;
+	white-space: nowrap;
+}
+
+.navlinks ul {
+	position: fixed;
+	top: -2px;
+	display: inline-block;
+	list-style: none;
+	opacity: 1;
+	float: right;
+}
+.navlinks li {
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+#active a {
+	color: #0A96F1;
+	/*color: #404040;*/
+}
+
+.navlinks li a {
+	text-decoration: none;
+	color: white;
+}
+
+/*   Content CSS   */
+.content { 
+	width:70%; 
+	height:100%;
+	margin: 0 auto;
+	position: relative; 
+	/*left: 15%;
+	right: 15%;*/
+	top: 50px; 
+	
+	/*background-color: #FFFFFF;*/
+}
+
+timestamp {
+	margin: 0;
+	font-size: 10px;
+	font-style: italic;
+}
+.post {
+	position: relative;
+	background-color: white;
+	color: black;
+	padding: 15px;
+	border-radius: 15px;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+.leftcolumn {
+	
+	margin-top: 15px;
+	margin-right: 15px;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	border-radius: 15px;
+	float: left;
+	overflow: hidden;
+	width: 60%;
+}
+
+.rightcolumn {
+	
+	margin-top: 15px;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	border-radius: 15px;
+	float: left;
+	overflow: hidden;
+	width: 30%;
+}
+
+/*   Accordion CSS   */
+.accordion, .menu {
+	background-color: #f2f2f2;
+	color: #666;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+.accordion li {
+	padding: 0;
+	list-style-type: none;
+	font-family: 'Roboto', sans-serif;
+	
+
+}
+
+.accordion-control {
+	background-color: #303030;
+	color: #fff;
+	display: block;
+	width: 100%;
+	padding: 0.5em 0.5em 0.5em 0.7em;
+	border-style: none;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	border-width: 0px 0px 2px 0px;
+	border-color: #ffffff;
+	}
+
+.accordion-control li:last-child {
+	border-width: 0;
+}
+
+.accordion-panel {
+  display: none;}
+
+.accordion-panel p {
+  margin: 20px;}
+
+.accordion-panel img {
+  display: block;
+  clear: left;
+  width: 100%;
+  }
+
+/*   Slideshow CSS   */
+#slideshow {
+    position:relative;
+    display: block;
+    height:350px;
+    text-align:center;
+    width: 50%;
+    margin: 0 auto; 
+}
+
+#slideshow img {
+    position:absolute;
+    z-index:8;
+    display: block;
+    text-align: center;
+}
+
+#slideshow img.active {
+    z-index:10;
+    opacity: 1;
+}
+
+#slideshow img.last-active {
+    z-index:9;
+}
+
+#slideshow img {
+	max-width:100%;
+	max-height:100%;
+	display: block;
+}
+/* Different Screen Size */
+
+@media only screen and (min-width : 0px) and (max-width : 760px)
+{
+	.navlinks {
+		display: none;
+	}
+
+	.content {
+		position: relative;
+		width: 90%;
+		margin: 0 auto;
+		left: -2%;
+	}
+
+	.post {
+		position: relative;
+		background-color: white;
+		color: black;
+		padding: 10px;
+		border-radius: 15px;
+		margin-top: 0px;
+		float: left;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.leftcolumn {
+		width: 100%;
+	}
+
+	.rightcolumn {
+		width: 100%;
+	}
+
+	.logo {
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	left: 40px;
+	}
+
+	#resume img {
+		width: 100%;
+	}
+	.dropbtn {
+		position: relative;
+		z-index: 999;
+		color: white;
+	}
+	#menuBtn {
+		display: block;
+		position: fixed;
+		left: 10px;
+		top: 12.5px;
+		z-index: 3;
+		width: 25px;
+		height: 25px;
+	}
+
+		/* Dropdown Button */
+	.dropbtn {
+	    color: white;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+	}
+
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	    transition-timing-function: ease-in;
+	}
+
+	#active a {
+	/*color: #0A96F1;*/
+	color: #2c6dff;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	    display: none;
+	    position: fixed;
+	    left: -10px;
+	    top: 50px;
+	    z-index: 99;
+	    background-color: #f9f9f9;
+	    min-width: 170px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    height: 100%;
+	    transition-timing-function: ease-in;
+	}
+
+	.dropdown-content li {
+		list-style: none;
+		border-style: solid;
+    	border-width: 0px 0px .5px 0px;
+    	border-color: #e6e6e6;
+    	margin-left: 5px;
+	}
+
+	.dropdown-content li:hover {
+		background-color: #e6e6e6;
+	}
+
+	.dropdown-content li:last-child {
+		border-width: 0;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    font-weight: 500;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+	.show {display:block;
+	transition-timing-function: ease-in;}
+}
